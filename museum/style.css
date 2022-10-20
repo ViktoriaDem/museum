@@ -55,8 +55,7 @@ body.lock {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-/*------------------------------------HEADER------------------------------------*/
+/*------------------------------------------------------------------------HEADER-----------------------------------------------------------------*/
 .header {
     position: fixed;
     width: 100%;
@@ -76,7 +75,7 @@ h4 {
     font-style: normal;
     font-weight: 300;
 }
-/*-------------------------------------LOGO----------------------------------------*/
+/*-------------------------------------------------------------------LOGO----------------------------------------------------------------------*/
 .logo__container {
     display: flex;
     position: relative;
@@ -97,7 +96,7 @@ h4 {
     text-transform: uppercase;
     cursor: pointer;
 }
-/*------------------------------------------MENU---------------------------*/
+/*------------------------------------------------------------------MENU--------------------------------------------------------------------*/
 .menu__list {
     display: flex;
     flex-wrap: wrap;
@@ -149,7 +148,6 @@ h4 {
         height: 2px;
         transition: all 0.3s ease 0s;
     }
-
     .header__burger::before,
     .header__burger::after {
         content: "";
@@ -250,7 +248,7 @@ h4 {
         left: 65px;
     }
 }
-/*----------------------------------------------------WELCOME--------------------------------------------*/
+/*--------------------------------------------------------------------------WELCOME-----------------------------------------------------------*/
 .main {
     position: relative;
     margin: 150px auto 415px auto;
@@ -316,7 +314,6 @@ h4 {
 .video-slider {
     width: 1440px;
 }
-
 .fotoMonaLisa {
     display: none;
 }
@@ -337,7 +334,7 @@ h4 {
     background: #030303;
     z-index: 3;
 }
-/*-------------------------------------BULLETS-----------------------------------*/
+/*----------------------------------------------------------------------BULLETS--------------------------------------------------------------*/
 .slider .swiper-pagination {
     bottom: 52px;
 }
@@ -359,7 +356,7 @@ h4 {
 .slider .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 25px) 0 0;
 }
-/*---------------------------------------BUTTONS-----------------------------------------*/
+/*---------------------------------------------------------------------BUTTONS-----------------------------------------------------------*/
 .slider .swiper-button-prev,
 .slider .swiper-button-next {
     width: 30px;
@@ -371,7 +368,6 @@ h4 {
 .slider .swiper-button-next:hover {
     opacity: 0.5;
 }
-
 .slider .swiper-button-prev {
     left: 445px;
     background: url(assets/slider/slider-prev.svg);
@@ -384,9 +380,7 @@ h4 {
 .slider .swiper-button-prev::after {
     color: rgba(255, 255, 255, 0);
 }
-
-
-/*---------------------------------------FRACTION---------------------------------------*/
+/*---------------------------------------------------------------------FRACTION-------------------------------------------------------*/
 .image-slider__fraction {
     padding: 40px 0px 0px 0px;
     width: 76px;
@@ -400,7 +394,6 @@ h4 {
 .image-slider__sepparator {
     margin: 0px 10px;
 }
-
 @media (max-width: 1440px) {
     .Welcome .text__block {
         width: 100%;
@@ -542,7 +535,7 @@ h4 {
         height: 450px;
     }
 }
-/*-------------------------------------VISITING--------------------------------------------------*/
+/*----------------------------------------------------------------------------VISITING----------------------------------------------------------*/
 .Visiting,
 .Explore,
 .Video,
@@ -558,8 +551,8 @@ h4 {
 }
 .section__title {
     font-family: Forum;
-    font-size: 80px;
-    line-height: 90px;
+    font-size: calc(30px + 50 * (100vw / 1920));
+    line-height: calc(40px + 50 * (100vw / 1920));
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #9d8665;
@@ -578,8 +571,8 @@ h4 {
     grid-gap: 75px 60px;
 }
 .section__content__title {
-    font-size: 32px;
-    line-height: 35px;
+    font-size: calc(24px + 8 * (100vw / 1920));
+    line-height: calc(27px + 8 * (100vw / 1920));
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #000000;
@@ -608,20 +601,23 @@ h4 {
     color: #000000;
 }
 ._360__virtual__tour {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: calc(16px + 10 * (100vw / 1920));
+    line-height: calc(18px + 10 * (100vw / 1920));
     margin: 10px 0px;
 }
 .google__street__view {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: calc(14px + 4 * (100vw / 1920));
+    line-height: calc(18px + 4 * (100vw / 1920));
 }
 .Visiting .section__content img {
     width: 100%;
+    height: auto;
     margin-bottom: 25px;
 }
 @media (max-width: 1440px) {
-
+    .section__content {
+        grid-gap: 30px 40px;
+    }
 }
 @media (max-width: 1024px) {
     .main .Visiting,
@@ -631,44 +627,19 @@ h4 {
     .main .Tickets {
         margin: 60px 0px 0px 0px;
     }
-    .Visiting .section__title {
-        font-size: 50px;
-        line-height: 75px;
-    }
     .Visiting .line {
-        width: 984px;
         margin: 20px 0px 60px 0px;
     }
     .Visiting .section__content {
-        display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 60px 108px;
-        padding-left: 108px;
+        grid-gap: 60px 40px;
     }
     .Visiting .section__content img {
-        width: 330px;
-        height: 215px;
         margin-bottom: 25px;
     }
-    .Visiting .section__content a > .section__content__title {
-        font-size: 28px;
-        line-height: 31px;
-    }
-    .Visiting .section__content .royal__palace .section__content__title,
-    .Visiting .section__content .denon__wing .section__content__title,
-    .Visiting .section__content .greek__hall .section__content__title {
-        letter-spacing: 5px;
-    }
-    .Visiting .section__content .colonnade__perrault .section__content__title,
-    .Visiting .section__content .mona__lisa .section__content__title,
-    .Visiting .section__content .night__palace .section__content__title {
-        letter-spacing: 3px;
-    }
-
     .Visiting .section__content a > .line {
         width: 150px;
-        transition: all 1s linear;
     }
     .Visiting .section__content .royal__palace:hover .line,
     .Visiting .section__content .denon__wing:hover .line,
@@ -678,83 +649,177 @@ h4 {
     .Visiting .section__content .night__palace:hover .line {
         width: 330px;
     }
-    .Visiting .section__content ._360__virtual__tour {
-        font-size: 20px;
-        line-height: 23px;
-    }
-    .Visiting .section__content .google__street__view {
-        font-size: 16px;
-        line-height: 19px;
-    }
 }
 @media (max-width: 768px) {
-
+    .Visiting ._container {
+        display: block;
+    }
+    .main .Visiting,
+    .main.Explore,
+    .main .Video,
+    .main .Gallery,
+    .main .Tickets {
+        margin: 40px 0px 0px 0px;
+    }
+    .Visiting .line {
+        margin: 20px 0px 40px 0px;
+    }
+    .Visiting .section__content {
+        grid-gap: 40px 35px;
+    }
+    .Visiting .section__content .royal__palace:hover .line,
+    .Visiting .section__content .denon__wing:hover .line,
+    .Visiting .section__content .colonnade__perrault:hover .line,
+    .Visiting .section__content .greek__hall:hover .line,
+    .Visiting .section__content .mona__lisa:hover .line,
+    .Visiting .section__content .night__palace:hover .line {
+        width: 280px;
+    }
 }
-@media (max-width: 420px) {
-
+@media (max-width: 575px) {
+    .main .Visiting,
+    .main .Explore,
+    .main .Video,
+    .main .Gallery,
+    .main .Tickets {
+        margin: 40px 0px 0px 0px;
+    }
+    .Visiting .line {
+        margin: 20px 0px 40px 0px;
+    }
+    .Visiting .section__content {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+    .Visiting .section__content img {
+        margin-bottom: 15px;
+    }
 }
-/*-----------------------------------EXPLORE-----------------------------*/
+/*--------------------------------------------------------------------EXPLORE-------------------------------------------------------------------*/
 .Explore {
     width: 100%;
-    min-height: 100%;
     background: #030303;
+    padding: 75px 0px;
+}
+.Explore ._container {
+    flex-wrap: nowrap;
+    gap: 40px;
 }
 .Explore .section__title {
-    margin-top: 75px;
     color: #ffffff;
-}
-.Explore .line {
-    width: 660px;
 }
 .Explore .text {
-    width: 660px;
-    height: 715px;
+    flex: 1 1 600px;
 }
-._information {
-    font-family: Roboto;
-    font-style: normal;
+._information{
     font-weight: 300;
-    font-size: 22px;
-    line-height: 38px;
-    margin-bottom: 25px;
-    margin-left: 2px;
+    font-size: calc(16px + 6 * (100vw / 1920));
+    line-height: calc(32px + 6 * (100vw / 1920));
     color: #ffffff;
+}
+._information:not(:last-child) {
+    margin-bottom: 25px;
 }
 .yellow__text {
     color: #caaa7d;
 }
-._information:last-child {
-    margin-bottom: 0px;
-}
 .img__explore {
+    flex: 0 1 720px;
     position: relative;
-    width: 720px;
     height: 700px;
-    margin: 90px 0px 75px 60px;
+    right: 0;
+}
+.img__explore img {
+    width: 100%;
 }
 .img-comp-img {
     position: absolute;
     width: auto;
-    height: auto;
     overflow: hidden;
 }
-.img-comp-img img {
-    display: block;
-    vertical-align: middle;
+.img-comp-overlay1 {
+    background: url('assets/img/image2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.img-comp-overlay2 {
+    background: url('assets/img/image1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
 }
 .img-comp-slider {
     position: absolute;
     z-index: 9;
     cursor: ew-resize;
     width: 40px;
-    height: 100%;
     top: 0;
     left: 0;
-    background: url(assets/img/explore_slider.png);
+    background: url('assets/img/explore_slider.png');
     opacity: 1;
 }
-
-/*------------------------------------------------VIDEO-----------------------------------*/
+@media (max-width: 1440px) {
+    .Explore .text .line,
+    .Contacts ._container .line,
+    .Tickets ._container .line {
+        margin: 20px 0px 60px 0px;
+    }
+    .Explore ._container .text {
+        width: 100%;
+        height: auto;
+    }
+    .Explore ._container {
+        display: block;
+    }
+    .Explore .text ._information {
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .Explore ._information:last-child {
+        display: none;
+    }
+    .Explore .img__explore {
+        width: 730px;
+        margin: 50px auto 0;
+    }
+}
+@media (max-width: 767px) {
+    .Explore .text .line,
+    .Contacts ._container .line,
+    .Tickets ._container .line {
+        margin: 20px 0px 40px 0px;
+    }
+    .Explore .img__explore {
+        width: 500px;
+        height: 500px;
+        margin: 40px auto 0;
+    }
+    .img-comp-slider,
+    .img-comp-overlay1 {
+        display: none;
+    }
+    .img-comp-overlay2 {
+        width: 100% !important;
+    }
+}
+@media (max-width: 575px) {
+    .Explore .img__explore {
+        width: 380px;
+        height: 368px;
+    }
+}
+@media (max-width: 420px) {
+    .Explore .img__explore {
+        width: 280px;
+        height: 300px;
+    }
+}
+/*------------------------------------------------------------VIDEO--------------------------------------------------------------------------*/
 .Video {
     width: 100%;
     min-height: 100%;
@@ -1438,43 +1503,6 @@ h4 {
         margin-top: 130px;
     }
     
-    
-
-    /*-------------------------------------------------VISITING-1024----------------------------------------------*/
-
-
-    /*-------------------------------------------------EXPLORE-1024---------------------------------------------------*/
-    .Explore .text .section__title,
-    .Contacts ._container .section__title,
-    .Gallery .section__title,
-    .Tickets ._container .section__title {
-        margin-top: 60px;
-        font-size: 50px;
-        line-height: 75px;
-    }
-    .Explore .text .line,
-    .Contacts ._container .line,
-    .Tickets ._container .line {
-        width: 984px;
-        margin: 20px 0px 60px 0px;
-    }
-    .Explore ._container .text {
-        width: 984px;
-        height: 109px;
-    }
-    .Explore .text ._information {
-        font-size: 20px;
-        line-height: 35px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-    }
-    .Explore ._information:last-child {
-        display: none;
-    }
-    .Explore .img__explore {
-        margin: 274px 132px 60px 132px;
-    }
-
     /*-----------------------------------------------VIDEO-1024------------------------------------------*/
     .Video ._container {
         height: 100%;
@@ -1771,78 +1799,10 @@ h4 {
     }
 
     /*--------------------------------------------------VISITING-768----------------------------------------------------*/
-    .main .Visiting,
-    .main.Explore,
-    .main .Video,
-    .main .Gallery,
-    .main .Tickets {
-        margin: 40px 0px 0px 0px;
-    }
-    .Visiting .section__title {
-        font-size: 40px;
-        line-height: 60px;
-    }
-    .Visiting .line {
-        width: 728px;
-        margin: 20px 0px 40px 0px;
-    }
-    .Visiting .section__content {
-        grid-gap: 40px 56px;
-        padding-left: 56px;
-        margin-bottom: 40px;
-    }
-    .Visiting .section__content img {
-        width: 280px;
-        height: 180px;
-    }
-    .Visiting .section__content a > .section__content__title {
-        font-size: 22px;
-        line-height: 24px;
-        letter-spacing: 3px;
-    }
-    .Visiting .section__content .royal__palace:hover .line,
-    .Visiting .section__content .denon__wing:hover .line,
-    .Visiting .section__content .colonnade__perrault:hover .line,
-    .Visiting .section__content .greek__hall:hover .line,
-    .Visiting .section__content .mona__lisa:hover .line,
-    .Visiting .section__content .night__palace:hover .line {
-        width: 280px;
-    }
-    .Visiting .section__content ._360__virtual__tour {
-        font-size: 18px;
-        line-height: 21px;
-    }
+    
 
     /*---------------------------------------EXPLORE-768---------------------------------------*/
-    .Explore .text .section__title,
-    .Contacts ._container .section__title,
-    .Gallery ._container .section__title {
-        margin-top: 40px;
-        font-size: 40px;
-        line-height: 60px;
-    }
-    .Explore .text .line,
-    .Contacts ._container .line,
-    .Tickets ._container .line {
-        width: 728px;
-        margin: 20px 0px 40px 0px;
-    }
-    .Explore ._container .text {
-        width: 100%;
-        height: 100px;
-    }
-    .Explore .text ._information {
-        display: none;
-    }
-    .Explore .img__explore {
-        width: 728px;
-        height: 705px;
-        margin: 63px 0px 40px 0px;
-    }
-    .Explore .img-comp-img img {
-        width: 728px;
-        height: 705px;
-    }
+    
 
     /*------------------------------------------------VIDEO-768------------------------------------*/
     .Video ._container .section__title {
@@ -2047,72 +2007,7 @@ h4 {
         margin-top: 90px;
     }
     
-    /*---------------------------------------------WELCOME-420-----------------------------------------------*/
-    
-    
 
-    /*--------------------------------------------------VISITING-420----------------------------------------------------*/
-    .main .Visiting,
-    .main .Explore,
-    .main .Video,
-    .main .Gallery,
-    .main .Tickets {
-        margin: 40px 0px 0px 0px;
-    }
-    .Visiting .section__title {
-        font-size: 28px;
-        line-height: 40px;
-    }
-    .Visiting .line {
-        width: 380px;
-        margin: 20px 0px 40px 0px;
-    }
-    .Visiting .section__content {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 40px;
-        padding-left: 50px;
-        margin-bottom: 40px;
-    }
-    .Visiting .section__content a > .section__content__title {
-        font-size: 18px;
-        line-height: 20px;
-        letter-spacing: 5px;
-    }
-    .Visiting .section__content ._360__virtual__tour {
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    /*---------------------------------------EXPLORE-420---------------------------------------*/
-    .Explore .text .section__title,
-    .Contacts ._container .section__title,
-    .Gallery ._container .section__title {
-        margin-top: 40px;
-        font-size: 28px;
-        line-height: 40px;
-    }
-    .Explore .text .line,
-    .Contacts ._container .line,
-    .Tickets ._container .line {
-        width: 380px;
-    }
-    .Explore .img__explore {
-        width: 380px;
-        height: 368px;
-    }
-    .Explore .img-comp-img {
-        width: 380px;
-        height: 368px;
-    }
-    .Explore .img-comp-img img {
-        width: 380px;
-        height: 368px;
-    }
-    .Explore .img-comp-slider {
-        background: url(assets/img/explore_slider_mini.png);
-        width: 20px;
-    }
 
     /*------------------------------------------------VIDEO-420------------------------------------*/
     .Video ._container .section__title {
