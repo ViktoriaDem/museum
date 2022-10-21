@@ -1,15 +1,15 @@
 function initComparisons() {
-    var x, i;
-    x = document.getElementsByClassName("img-comp-overlay");
+    let x, i;
+    x = document.getElementsByClassName("img-comp-overlay2");
     for (i = 0; i < x.length; i++) {
       compareImages(x[i]);
     }
     function compareImages(img) {
-      var slider, img, clicked = 0, w, h;
-      w = img.offsetWidth;
-      h = img.offsetHeight;
+      let slider, clicked = 0, w, h;
+      w = img.offsetWidth; console.log(img.offsetWidth);
+      h = img.offsetHeight;console.log(img.offsetHeight);
       img.style.width = "440px";
-      slider = document.createElement("DIV");
+      slider = document.createElement("div");
       slider.setAttribute("class", "img-comp-slider");
       img.parentElement.insertBefore(slider, img);
       slider.style.left = 440 - (slider.offsetWidth / 2) + "px";
