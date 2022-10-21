@@ -215,86 +215,13 @@
                 <div class="_container">
                     <h2 class="section__title">Video Journey</h2>
                     <p class="_information">Enter and visit one of the most famous museums in the world and
-                        enjoy<br>masterpieces such as Mona Lisa or Hammurabi's Code</p>
-                    <div class="video">
-                        <img src="assets/img/video.jpg" alt="preview" class="preview">
-
-                        <button class="play">
-                            <img src="assets/svg/circle.svg" alt="circle" class="circle">
-                            <img src="assets/svg/triangle.svg" alt="triangle" class="triangle">
-                        </button>
-                        <div class="time">
-                            <img src="assets/svg/play_button.svg" alt="play" class="play__button">
-                            <input type="range" value="0" min="0" max="100" step="1" class="timeline">
-                            <div class="volume">
-                                <img src="assets/svg/volume/volume_1.svg" alt="" class="volume__1">
-                                <img src="assets/svg/volume/volume_2.svg" alt="" class="volume__2">
-                                <img src="assets/svg/volume/volume_3.svg" alt="" class="volume__3">
-                            </div>
-                            <input type="range" value="0" min="0" max="100" step="1" class="volume__line">
-                            <div class="full__screen">
-                                <img src="assets/svg/full_screen/top-left.svg" alt="" class="top-left">
-                                <img src="assets/svg/full_screen/top-right.svg" alt="" class="top-right">
-                                <img src="assets/svg/full_screen/bottom-left.svg" alt="" class="bottom-left">
-                                <img src="assets/svg/full_screen/bottom-right.svg" alt="" class="bottom-right">
-
-                            </div>
-                        </div>
+                        enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                    <div class="video__container">
+                        <iframe class="video" loading="lazy" width="452" height="254"
+                            src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="video__1"></iframe>
                     </div>
-                    <div class="videos">
-                        <div class="video-slider swiper-container">
-                            <div class="video-slider__wrapper swiper-wrapper">
-                                <div class="video-slider__slide swiper-slide">
-                                    <div class="video-slider__video">
-                                        <iframe loading="lazy" width="452" height="254"
-                                            src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen class="video__1"></iframe>
-                                    </div>
-                                </div>
-                                <div class="video-slider__slide swiper-slide">
-                                    <div class="video-slider__video">
-                                        <iframe loading="lazy" width="452" height="254"
-                                            src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen class="video__2"></iframe>
-                                    </div>
-                                </div>
-                                <div class="video-slider__slide swiper-slide">
-                                    <div class="video-slider__video">
-                                        <iframe loading="lazy" width="452" height="254"
-                                            src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen class="video__3"></iframe>
-                                    </div>
-                                </div>
-                                <div class="video-slider__slide swiper-slide">
-                                    <div class="video-slider__video">
-                                        <iframe loading="lazy" width="452" height="254"
-                                            src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                                <div class="video-slider__slide swiper-slide">
-                                    <div class="video-slider__video">
-                                        <iframe loading="lazy" width="452" height="254"
-                                            src="https://www.youtube.com/embed/2OR0OCr6uRE" title="YouTube video player"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="video__slider">
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-
-                            <div class="video-pagination"></div>
-
-                        </div>
-                    </div>
-
                 </div>
             </section>
 
@@ -320,16 +247,16 @@
                             <div class="ticket__type__list">
                                 <ul>
                                     <li>
-                                        <input type="radio" name="radio-buttons" class="ticket__type__point">
-                                        <p class="ticket__type__text">Permanent exhibition</p>
+                                        <input type="radio" name="radio-buttons" class="ticket__type__point" checked>
+                                        <label class="ticket__type__text">Permanent exhibition</lab>
                                     </li>
                                     <li>
                                         <input type="radio" name="radio-buttons" class="ticket__type__point">
-                                        <p class="ticket__type__text">Temporary exhibition</p>
+                                        <label class="ticket__type__text">Temporary exhibition</label>
                                     </li>
                                     <li>
                                         <input type="radio" name="radio-buttons" class="ticket__type__point">
-                                        <p class="ticket__type__text">Combined Admission</p>
+                                        <label class="ticket__type__text">Combined Admission</label>
                                     </li>
                                 </ul>
                             </div>
@@ -350,10 +277,8 @@
                                 <button class="sign__plus">+</button>
                             </div>
                             <p class="total">Total €220</p>
+                            <button class="button__buy">Buy Now</button>
                         </div>
-
-                        <input type="button" value="Buy Now" class="button__buy">
-
                     </div>
                 </div>
             </section>
@@ -366,7 +291,7 @@
                     <div class="line"></div>
                     <div class="contact__information">
                         <div class="contact__data">
-                            <h5 class="contact__title">Palais Royal Musee du Louvre</h5>
+                            <h5 class="contact__title">Palais Royal <br>Musee du Louvre</h5>
                             <p class="address">address: 75001 Paris, France</p>
                             <p class="phone">phone: <a href="tel:+330140205050">+33(0) 1 40 20 50 50</a></p>
                             <p class="mail">mail: <a href="mailto:info@louvre.fr">info@louvre.fr</a></p>
@@ -382,7 +307,6 @@
         </main>
 
         <footer class="footer">
-            <div class="line"></div>
             <div class="footer__container _container">
                 <div class="logo__container">
                     <h4 class="logo__louvre">
@@ -443,13 +367,12 @@
                         </li>
                     </ul>
                 </div>
+                <div class="line"></div>
                 <div class="last__string">
                     <p class="year">&copy; 2021</p>
-                    <p class="rss">The Rolling Scopes School</p>
                     <a href="https://github.com/ViktoriaDem" title="GitHub" class="username">Demidovich<br>Viktoria</a>
                 </div>
             </div>
-
         </footer>
     </div>
 
@@ -460,5 +383,4 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/welcome__slider.js"></script>
 </body>
-
 </html>
